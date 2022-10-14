@@ -87,7 +87,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(255, 37);
             this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Əvəzləyici Müəllim";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
