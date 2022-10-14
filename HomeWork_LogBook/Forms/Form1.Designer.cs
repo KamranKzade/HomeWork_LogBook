@@ -162,7 +162,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1602, 214);
+            this.panel1.Size = new System.Drawing.Size(1689, 214);
             this.panel1.TabIndex = 8;
             // 
             // label10
@@ -289,7 +289,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 223);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1602, 502);
+            this.panel2.Size = new System.Drawing.Size(1689, 502);
             this.panel2.TabIndex = 9;
             // 
             // tableLayoutPanel1
@@ -304,7 +304,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.27F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.73F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1608, 728);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1695, 728);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // Form1
@@ -313,11 +313,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1608, 728);
+            this.ClientSize = new System.Drawing.Size(1695, 728);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.MaximumSize = new System.Drawing.Size(1635, 800);
+            this.MaximumSize = new System.Drawing.Size(1750, 800);
             this.MinimumSize = new System.Drawing.Size(1620, 765);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
