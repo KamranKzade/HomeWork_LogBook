@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.txtBox_Dersin_adi = new System.Windows.Forms.TextBox();
@@ -59,24 +58,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 33);
+            this.label1.Size = new System.Drawing.Size(353, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "FBAS_4214_AZ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(327, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 33);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "(Winform)";
+            this.label1.Text = "FBAS_4214_AZ ( Winforms )";
             // 
             // radioButton1
             // 
@@ -157,18 +144,17 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_cancel);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btn_save);
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.btn_pen);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.txtBox_Dersin_adi);
-            this.panel1.Location = new System.Drawing.Point(16, 5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1431, 166);
+            this.panel1.Size = new System.Drawing.Size(1319, 166);
             this.panel1.TabIndex = 8;
             // 
             // tableLayoutPanel1
@@ -185,12 +171,11 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1463, 505);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1325, 514);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel2.Controls.Add(this.rbt_all);
             this.panel2.Controls.Add(this.label10);
@@ -201,9 +186,10 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(17, 180);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 182);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1428, 67);
+            this.panel2.Size = new System.Drawing.Size(1319, 67);
             this.panel2.TabIndex = 103;
             // 
             // rbt_all
@@ -327,11 +313,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1463, 822);
+            this.ClientSize = new System.Drawing.Size(1325, 822);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MinimumSize = new System.Drawing.Size(0, 800);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -346,7 +335,6 @@
         #endregion
 
         private Label label1;
-        private Label label2;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private TextBox txtBox_Dersin_adi;
