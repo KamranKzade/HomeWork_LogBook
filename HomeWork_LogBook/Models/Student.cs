@@ -19,7 +19,7 @@ public class Student
 
 
 
-    public Student(int number, string? pictureUrl, string? firstName, string? lastName, string? fatherName, DateTime lastIn, ParticipationStatus status, byte? laboratoryWork, byte? classWork, byte? activityCrystal, string? comment)
+    public Student(int number, string? pictureUrl, string? lastName,  string? firstName ,string? fatherName, DateTime lastIn, ParticipationStatus status, byte? laboratoryWork, byte? classWork, byte? activityCrystal, string? comment)
     {
         Number = number;
         PictureUrl = pictureUrl;

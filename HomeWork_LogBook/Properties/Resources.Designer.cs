@@ -63,6 +63,16 @@ namespace HomeWork_LogBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avatar_default {
+            get {
+                object obj = ResourceManager.GetObject("avatar_default", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bosdiamond {
             get {
                 object obj = ResourceManager.GetObject("bosdiamond", resourceCulture);

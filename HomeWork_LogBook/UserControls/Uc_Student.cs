@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeWork_LogBook.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeWork_LogBook.UserControls
+namespace HomeWork_LogBook.UserControls;
+
+public partial class Uc_Student : UserControl
 {
-    public partial class Uc_Student : UserControl
+    public Uc_Student(Student student)
     {
-        public Uc_Student()
+        InitializeComponent();
+
+
+        cbox_test.SelectedIndex = 0;
+        cbox_classwork.SelectedIndex = 0;
+
+
+        lbl_no.Text = student.Number.ToString();
+
+        if (!string.IsNullOrWhiteSpace(student.PictureUrl))
+            pictureBox1.Load($"./../../../Resources/{student.PictureUrl}");
+
+
+        lbl_fullname.Text = student.FullName;
+        lbl_lastin.Text = student.LastIn.ToShortDateString();
+
+
+        switch (student.Status)
         {
-            InitializeComponent();
+            case ParticipationStatus.Present:
+                rbtn_1.Checked = true;
+                break;
+            case ParticipationStatus.Late:
+                rbtn_2.Checked = true;
+                break;
+            case ParticipationStatus.Absent:
+                rbtn_3.Checked = true;
+                break;
         }
     }
 }
