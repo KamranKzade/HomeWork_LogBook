@@ -100,6 +100,9 @@ public partial class Form1 : Form
         {
             if (control is Uc_Student s)
             {
+                s.rbtn_1.Enabled = false;
+                s.rbtn_2.Enabled = false;
+                s.rbtn_3.Enabled = false;
                 s.cbox_test.Enabled = false;
                 s.cbox_classwork.Enabled = false;
                 s.btn_comment.Enabled = false;
