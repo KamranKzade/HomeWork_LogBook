@@ -313,6 +313,7 @@
             this.btn_diamond_cancel.Size = new System.Drawing.Size(20, 20);
             this.btn_diamond_cancel.TabIndex = 0;
             this.btn_diamond_cancel.UseVisualStyleBackColor = true;
+            this.btn_diamond_cancel.Click += new System.EventHandler(this.btn_diamond_cancel_Click);
             // 
             // btn_c3
             // 
@@ -327,6 +328,7 @@
             this.btn_c3.Size = new System.Drawing.Size(20, 20);
             this.btn_c3.TabIndex = 0;
             this.btn_c3.UseVisualStyleBackColor = true;
+            this.btn_c3.Click += new System.EventHandler(this.diamond_Click);
             // 
             // btn_c2
             // 
@@ -341,6 +343,7 @@
             this.btn_c2.Size = new System.Drawing.Size(20, 20);
             this.btn_c2.TabIndex = 0;
             this.btn_c2.UseVisualStyleBackColor = true;
+            this.btn_c2.Click += new System.EventHandler(this.diamond_Click);
             // 
             // btn_c1
             // 
@@ -355,6 +358,7 @@
             this.btn_c1.Size = new System.Drawing.Size(20, 20);
             this.btn_c1.TabIndex = 0;
             this.btn_c1.UseVisualStyleBackColor = true;
+            this.btn_c1.Click += new System.EventHandler(this.diamond_Click);
             // 
             // panel7
             // 

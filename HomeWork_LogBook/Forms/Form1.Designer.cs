@@ -39,7 +39,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.rbt_all = new System.Windows.Forms.RadioButton();
             this.btn_diamont_count = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_kristal_sayi = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -137,7 +137,7 @@
             this.panel1.Controls.Add(this.rbt_all);
             this.panel1.Controls.Add(this.btn_diamont_count);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lbl_kristal_sayi);
             this.panel1.Controls.Add(this.btn_cancel);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -206,18 +206,18 @@
             this.btn_diamont_count.TabIndex = 101;
             this.btn_diamont_count.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // lbl_kristal_sayi
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label8.Location = new System.Drawing.Point(1242, 149);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 26);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "5";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_kristal_sayi.AutoSize = true;
+            this.lbl_kristal_sayi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_kristal_sayi.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbl_kristal_sayi.Location = new System.Drawing.Point(1242, 149);
+            this.lbl_kristal_sayi.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbl_kristal_sayi.Name = "lbl_kristal_sayi";
+            this.lbl_kristal_sayi.Size = new System.Drawing.Size(23, 26);
+            this.lbl_kristal_sayi.TabIndex = 0;
+            this.lbl_kristal_sayi.Text = "5";
+            this.lbl_kristal_sayi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -347,7 +347,7 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Label label8;
+        private Label lbl_kristal_sayi;
         private Label label10;
         private RadioButton rbt_all;
         private Button btn_diamont_count;
