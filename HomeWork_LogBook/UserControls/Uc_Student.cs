@@ -21,7 +21,6 @@ public partial class Uc_Student : UserControl
         cbox_test.SelectedIndex = 0;
         cbox_classwork.SelectedIndex = 0;
 
-
         lbl_no.Text = student.Number.ToString();
 
         if (!string.IsNullOrWhiteSpace(student.PictureUrl))
@@ -35,14 +34,19 @@ public partial class Uc_Student : UserControl
         switch (student.Status)
         {
             case ParticipationStatus.Present:
-                rbtn_1.Checked = true;
+                rbtn_1.Checked = false;
                 break;
             case ParticipationStatus.Late:
-                rbtn_2.Checked = true;
+                rbtn_2.Checked = false;
                 break;
             case ParticipationStatus.Absent:
-                rbtn_3.Checked = true;
+                rbtn_3.Checked = false;
                 break;
         }
+    }
+
+    private void btn_comment_Click(object sender, EventArgs e)
+    {
+        txt_comment.Enabled = true;
     }
 }

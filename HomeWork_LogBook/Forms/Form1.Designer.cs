@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.txtBox_Dersin_adi = new System.Windows.Forms.TextBox();
             this.btn_pen = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtBox_Dersin_adi = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -90,19 +90,6 @@
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // txtBox_Dersin_adi
-            // 
-            this.txtBox_Dersin_adi.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtBox_Dersin_adi.Enabled = false;
-            this.txtBox_Dersin_adi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.txtBox_Dersin_adi.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtBox_Dersin_adi.Location = new System.Drawing.Point(737, 23);
-            this.txtBox_Dersin_adi.Multiline = true;
-            this.txtBox_Dersin_adi.Name = "txtBox_Dersin_adi";
-            this.txtBox_Dersin_adi.PlaceholderText = "Dersin adi";
-            this.txtBox_Dersin_adi.Size = new System.Drawing.Size(444, 93);
-            this.txtBox_Dersin_adi.TabIndex = 4;
-            // 
             // btn_pen
             // 
             this.btn_pen.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -143,6 +130,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.txtBox_Dersin_adi);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.rbt_all);
             this.panel1.Controls.Add(this.btn_diamont_count);
@@ -158,7 +146,6 @@
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.btn_pen);
             this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.txtBox_Dersin_adi);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -173,9 +160,9 @@
             this.label10.Location = new System.Drawing.Point(1376, 156);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 26);
+            this.label10.Size = new System.Drawing.Size(48, 26);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Comment";
+            this.label10.Text = "Rəy";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rbt_all
@@ -192,6 +179,7 @@
             this.rbt_all.TabStop = true;
             this.rbt_all.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbt_all.UseVisualStyleBackColor = false;
+            this.rbt_all.CheckedChanged += new System.EventHandler(this.rbt_all_CheckedChanged);
             // 
             // btn_diamont_count
             // 
@@ -222,12 +210,12 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(1014, 156);
+            this.label7.Location = new System.Drawing.Point(1009, 154);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 25);
+            this.label7.Size = new System.Drawing.Size(95, 25);
             this.label7.TabIndex = 0;
-            this.label7.Text = "ClassWork";
+            this.label7.Text = "Sinifdə iş";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -235,25 +223,25 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(862, 154);
+            this.label6.Location = new System.Drawing.Point(821, 155);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 26);
+            this.label6.Size = new System.Drawing.Size(144, 26);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Test";
+            this.label6.Text = "Yoxlama işləri";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label3.Location = new System.Drawing.Point(0, 147);
+            this.label3.Location = new System.Drawing.Point(120, 152);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(255, 34);
+            this.label3.Size = new System.Drawing.Size(211, 26);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Student\'s Full Name";
+            this.label3.Text = "Adı / Soyadı / Ata adı";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -261,12 +249,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label5.Location = new System.Drawing.Point(642, 160);
+            this.label5.Location = new System.Drawing.Point(622, 160);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 22);
+            this.label5.Size = new System.Drawing.Size(171, 22);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Mark All Present";
+            this.label5.Text = "Hər kəsi qeyd etmek";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -274,12 +262,12 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(360, 157);
+            this.label4.Location = new System.Drawing.Point(371, 156);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 26);
+            this.label4.Size = new System.Drawing.Size(201, 26);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Last Seen in MyStat";
+            this.label4.Text = "MyStats a daxil olub";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -306,6 +294,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.73F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1695, 728);
             this.tableLayoutPanel1.TabIndex = 10;
+            // 
+            // txtBox_Dersin_adi
+            // 
+            this.txtBox_Dersin_adi.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtBox_Dersin_adi.Location = new System.Drawing.Point(737, 23);
+            this.txtBox_Dersin_adi.Multiline = true;
+            this.txtBox_Dersin_adi.Name = "txtBox_Dersin_adi";
+            this.txtBox_Dersin_adi.PlaceholderText = "Dərsin Mövzusu";
+            this.txtBox_Dersin_adi.Size = new System.Drawing.Size(444, 93);
+            this.txtBox_Dersin_adi.TabIndex = 102;
             // 
             // Form1
             // 
@@ -335,7 +333,6 @@
         private Label label1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private TextBox txtBox_Dersin_adi;
         private Button btn_pen;
         private Button btn_save;
         private Button btn_cancel;
@@ -352,5 +349,6 @@
         private Button btn_diamont_count;
         private Panel panel2;
         private TableLayoutPanel tableLayoutPanel1;
+        private TextBox txtBox_Dersin_adi;
     }
 }

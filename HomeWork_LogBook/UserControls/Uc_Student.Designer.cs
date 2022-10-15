@@ -49,6 +49,7 @@
             this.btn_c2 = new System.Windows.Forms.Button();
             this.btn_c1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txt_comment = new System.Windows.Forms.TextBox();
             this.btn_comment = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
@@ -173,6 +174,7 @@
             this.rbtn_3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbtn_3.AutoSize = true;
             this.rbtn_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn_3.Enabled = false;
             this.rbtn_3.Location = new System.Drawing.Point(99, 19);
             this.rbtn_3.Name = "rbtn_3";
             this.rbtn_3.Size = new System.Drawing.Size(17, 16);
@@ -184,6 +186,7 @@
             this.rbtn_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbtn_2.AutoSize = true;
             this.rbtn_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn_2.Enabled = false;
             this.rbtn_2.Location = new System.Drawing.Point(76, 19);
             this.rbtn_2.Name = "rbtn_2";
             this.rbtn_2.Size = new System.Drawing.Size(17, 16);
@@ -195,6 +198,7 @@
             this.rbtn_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbtn_1.AutoSize = true;
             this.rbtn_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn_1.Enabled = false;
             this.rbtn_1.Location = new System.Drawing.Point(53, 19);
             this.rbtn_1.Name = "rbtn_1";
             this.rbtn_1.Size = new System.Drawing.Size(17, 16);
@@ -218,6 +222,7 @@
             this.cbox_test.BackColor = System.Drawing.Color.Plum;
             this.cbox_test.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbox_test.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_test.Enabled = false;
             this.cbox_test.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbox_test.FormattingEnabled = true;
             this.cbox_test.Items.AddRange(new object[] {
@@ -256,6 +261,7 @@
             this.cbox_classwork.BackColor = System.Drawing.Color.GreenYellow;
             this.cbox_classwork.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbox_classwork.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_classwork.Enabled = false;
             this.cbox_classwork.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbox_classwork.FormattingEnabled = true;
             this.cbox_classwork.Items.AddRange(new object[] {
@@ -297,6 +303,7 @@
             this.btn_diamond_cancel.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.cancel__v2;
             this.btn_diamond_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_diamond_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_diamond_cancel.Enabled = false;
             this.btn_diamond_cancel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_diamond_cancel.Location = new System.Drawing.Point(96, 17);
             this.btn_diamond_cancel.Name = "btn_diamond_cancel";
@@ -310,6 +317,7 @@
             this.btn_c3.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.bosdiamond;
             this.btn_c3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_c3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_c3.Enabled = false;
             this.btn_c3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_c3.Location = new System.Drawing.Point(70, 17);
             this.btn_c3.Name = "btn_c3";
@@ -323,6 +331,7 @@
             this.btn_c2.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.bosdiamond;
             this.btn_c2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_c2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_c2.Enabled = false;
             this.btn_c2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_c2.Location = new System.Drawing.Point(44, 17);
             this.btn_c2.Name = "btn_c2";
@@ -336,6 +345,7 @@
             this.btn_c1.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.bosdiamond;
             this.btn_c1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_c1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_c1.Enabled = false;
             this.btn_c1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_c1.Location = new System.Drawing.Point(18, 17);
             this.btn_c1.Name = "btn_c1";
@@ -346,6 +356,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.txt_comment);
             this.panel7.Controls.Add(this.btn_comment);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -355,12 +366,24 @@
             this.panel7.Size = new System.Drawing.Size(231, 55);
             this.panel7.TabIndex = 6;
             // 
+            // txt_comment
+            // 
+            this.txt_comment.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txt_comment.Enabled = false;
+            this.txt_comment.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txt_comment.Location = new System.Drawing.Point(56, 14);
+            this.txt_comment.Name = "txt_comment";
+            this.txt_comment.PlaceholderText = "Comment";
+            this.txt_comment.Size = new System.Drawing.Size(61, 27);
+            this.txt_comment.TabIndex = 1;
+            // 
             // btn_comment
             // 
             this.btn_comment.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_comment.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.comments;
             this.btn_comment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_comment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_comment.Enabled = false;
             this.btn_comment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_comment.Location = new System.Drawing.Point(12, 17);
             this.btn_comment.Margin = new System.Windows.Forms.Padding(0);
@@ -368,6 +391,7 @@
             this.btn_comment.Size = new System.Drawing.Size(20, 20);
             this.btn_comment.TabIndex = 0;
             this.btn_comment.UseVisualStyleBackColor = true;
+            this.btn_comment.Click += new System.EventHandler(this.btn_comment_Click);
             // 
             // label1
             // 
@@ -399,6 +423,7 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -413,20 +438,21 @@
         private Panel panel4;
         private Panel panel5;
         private Panel panel6;
-        private Panel panel7;
         private Label lbl_fullname;
         private Label lbl_no;
         private Label lbl_lastin;
         private PictureBox pictureBox1;
-        private RadioButton rbtn_1;
-        private RadioButton rbtn_3;
-        private RadioButton rbtn_2;
-        private ComboBox cbox_test;
-        private ComboBox cbox_classwork;
-        private Button btn_c1;
-        private Button btn_c3;
-        private Button btn_c2;
-        private Button btn_diamond_cancel;
-        private Button btn_comment;
+        public RadioButton rbtn_1;
+        public RadioButton rbtn_3;
+        public RadioButton rbtn_2;
+        public ComboBox cbox_test;
+        public ComboBox cbox_classwork;
+        public TextBox txt_comment;
+        public Button btn_comment;
+        public Panel panel7;
+        public Button btn_c1;
+        public Button btn_c3;
+        public Button btn_c2;
+        public Button btn_diamond_cancel;
     }
 }
