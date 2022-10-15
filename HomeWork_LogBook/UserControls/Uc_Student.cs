@@ -34,19 +34,45 @@ public partial class Uc_Student : UserControl
         switch (student.Status)
         {
             case ParticipationStatus.Present:
-                rbtn_1.Checked = false;
+                rbtn_1.Checked = true;
                 break;
             case ParticipationStatus.Late:
-                rbtn_2.Checked = false;
+                rbtn_2.Checked = true;
                 break;
             case ParticipationStatus.Absent:
-                rbtn_3.Checked = false;
+                rbtn_3.Checked = true;
                 break;
         }
     }
 
+    Student student = new();
+
     private void btn_comment_Click(object sender, EventArgs e)
     {
+        txt_comment.Visible = true;
         txt_comment.Enabled = true;
+
+        btn_comment_save.Visible = true;
+        btn_diamond_cancel.Visible = true;
     }
+
+    private void cbox_test_SelectedIndexChanged(object sender, EventArgs e) => student.LaboratoryWork = (byte)cbox_test.SelectedIndex;
+
+    private void cbox_classwork_SelectedIndexChanged(object sender, EventArgs e) => student.ClassWork = (byte)cbox_classwork.SelectedIndex;
+
+    private void btn_comment_save_Click(object sender, EventArgs e)
+    {
+        if (txt_comment.Text.Length <= 3)
+        {
+            MessageBox.Show("Comment 3 herfden cox olmalidir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txt_comment.Text = string.Empty;
+            txt_comment.Visible = false;
+        }
+
+        btn_comment_save.Visible = false;
+        txt_comment.Enabled = false;
+
+        student.Comment = txt_comment.Text;
+    }
+
 }

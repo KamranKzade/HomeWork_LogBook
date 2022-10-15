@@ -35,6 +35,7 @@
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBox_Dersin_adi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rbt_all = new System.Windows.Forms.RadioButton();
             this.btn_diamont_count = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtBox_Dersin_adi = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -108,24 +108,26 @@
             this.btn_save.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.save;
             this.btn_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_save.Enabled = false;
             this.btn_save.Location = new System.Drawing.Point(1199, 23);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(38, 29);
             this.btn_save.TabIndex = 6;
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Visible = false;
+            this.btn_save.Click += new System.EventHandler(this.Btn_save_Click);
             // 
             // btn_cancel
             // 
             this.btn_cancel.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.cancel__v2;
             this.btn_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cancel.Enabled = false;
             this.btn_cancel.Location = new System.Drawing.Point(1199, 86);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(38, 30);
             this.btn_cancel.TabIndex = 7;
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Visible = false;
+            this.btn_cancel.Click += new System.EventHandler(this.Btn_cancel_Click);
             // 
             // panel1
             // 
@@ -152,12 +154,23 @@
             this.panel1.Size = new System.Drawing.Size(1689, 214);
             this.panel1.TabIndex = 8;
             // 
+            // txtBox_Dersin_adi
+            // 
+            this.txtBox_Dersin_adi.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtBox_Dersin_adi.Location = new System.Drawing.Point(737, 23);
+            this.txtBox_Dersin_adi.Multiline = true;
+            this.txtBox_Dersin_adi.Name = "txtBox_Dersin_adi";
+            this.txtBox_Dersin_adi.PlaceholderText = "Dərsin Mövzusu";
+            this.txtBox_Dersin_adi.Size = new System.Drawing.Size(444, 93);
+            this.txtBox_Dersin_adi.TabIndex = 102;
+            this.txtBox_Dersin_adi.Visible = false;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(1376, 156);
+            this.label10.Location = new System.Drawing.Point(1426, 152);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 26);
@@ -170,9 +183,10 @@
             this.rbt_all.AutoSize = true;
             this.rbt_all.BackColor = System.Drawing.Color.LimeGreen;
             this.rbt_all.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbt_all.Enabled = false;
             this.rbt_all.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.rbt_all.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbt_all.Location = new System.Drawing.Point(687, 194);
+            this.rbt_all.Location = new System.Drawing.Point(713, 184);
             this.rbt_all.Name = "rbt_all";
             this.rbt_all.Size = new System.Drawing.Size(30, 16);
             this.rbt_all.TabIndex = 10;
@@ -186,7 +200,7 @@
             this.btn_diamont_count.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.Tamdiamond;
             this.btn_diamont_count.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_diamont_count.Enabled = false;
-            this.btn_diamont_count.Location = new System.Drawing.Point(1241, 155);
+            this.btn_diamont_count.Location = new System.Drawing.Point(1274, 152);
             this.btn_diamont_count.Name = "btn_diamont_count";
             this.btn_diamont_count.Size = new System.Drawing.Size(52, 26);
             this.btn_diamont_count.TabIndex = 101;
@@ -197,7 +211,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label8.Location = new System.Drawing.Point(1209, 152);
+            this.label8.Location = new System.Drawing.Point(1242, 149);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(23, 26);
@@ -210,7 +224,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(1009, 154);
+            this.label7.Location = new System.Drawing.Point(1037, 152);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 25);
@@ -223,7 +237,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(821, 155);
+            this.label6.Location = new System.Drawing.Point(867, 150);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 26);
@@ -236,7 +250,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label3.Location = new System.Drawing.Point(120, 152);
+            this.label3.Location = new System.Drawing.Point(127, 153);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 26);
@@ -249,7 +263,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label5.Location = new System.Drawing.Point(622, 160);
+            this.label5.Location = new System.Drawing.Point(643, 150);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 22);
@@ -262,7 +276,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(371, 156);
+            this.label4.Location = new System.Drawing.Point(395, 152);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 26);
@@ -294,16 +308,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.73F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1695, 728);
             this.tableLayoutPanel1.TabIndex = 10;
-            // 
-            // txtBox_Dersin_adi
-            // 
-            this.txtBox_Dersin_adi.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtBox_Dersin_adi.Location = new System.Drawing.Point(737, 23);
-            this.txtBox_Dersin_adi.Multiline = true;
-            this.txtBox_Dersin_adi.Name = "txtBox_Dersin_adi";
-            this.txtBox_Dersin_adi.PlaceholderText = "Dərsin Mövzusu";
-            this.txtBox_Dersin_adi.Size = new System.Drawing.Size(444, 93);
-            this.txtBox_Dersin_adi.TabIndex = 102;
             // 
             // Form1
             // 

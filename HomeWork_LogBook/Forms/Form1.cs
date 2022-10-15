@@ -10,6 +10,8 @@ namespace HomeWork_LogBook
             InitializeComponent();
         }
 
+        bool checkRadioEsas;
+
         #region Load_Form
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,56 +25,41 @@ namespace HomeWork_LogBook
 
                 panel2.Controls.Add(uc);
             }
-
-            rbt_all.Enabled = false;
-            txtBox_Dersin_adi.Enabled = false;
         }
 
         #endregion
 
-
-        #region Dersin adi
-
+        #region Panel1 Click Button
 
         private void btn_pen_Click(object sender, EventArgs e)
         {
+            checkRadioEsas = radioButton1.Checked;
             if (radioButton1.Checked || radioButton2.Checked)
             {
+                txtBox_Dersin_adi.Visible = true;
                 txtBox_Dersin_adi.Enabled = true;
-                btn_save.Enabled = true;
-                btn_cancel.Enabled = true;
 
-
-                TextBox textBox = new TextBox()
-                {
-                    Location = new Point(737, 23),
-                    Size = new Size(444, 93),
-                    Name = "txtBox_Dersin_adi"
-                };
-
-
-
-                btn_cancel.Click += Btn_cancel_Click;
-                btn_save.Click += Btn_save_Click;
+                btn_save.Visible = true;
+                btn_cancel.Visible = true;
             }
             else
                 MessageBox.Show("Muellimi secin", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
+
+        #endregion
+
+        #region Save Button Click
 
         private void Btn_save_Click(object? sender, EventArgs e)
         {
-
             txtBox_Dersin_adi.Enabled = false;
-            btn_save.Enabled = false;
-            btn_cancel.Enabled = false;
-            rbt_all.Enabled = true;
-
-            radioButton1.Enabled = false;
-            radioButton2.Enabled = false;
+            btn_save.Visible = false;
+            btn_cancel.Visible = false;
 
             if (txtBox_Dersin_adi.Text.Length > 3)
             {
+                rbt_all.Enabled = true;
+
                 foreach (var control in panel2.Controls)
                 {
                     if (control is Uc_Student s)
@@ -84,19 +71,32 @@ namespace HomeWork_LogBook
                         s.btn_c2.Enabled = true;
                         s.btn_c3.Enabled = true;
                         s.btn_diamond_cancel.Enabled = true;
+                        s.rbtn_1.Enabled = true;
+                        s.rbtn_2.Enabled = true;
+                        s.rbtn_3.Enabled = true;
                     }
                 }
             }
             else
+            {
                 MessageBox.Show("Movzunun adini 3 herfden boyuk olmalidir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+
+        #endregion
+
+        #region Cancel Button
+
         private void Btn_cancel_Click(object? sender, EventArgs e)
         {
             txtBox_Dersin_adi.Text = string.Empty;
-            txtBox_Dersin_adi.Enabled = false;
+            txtBox_Dersin_adi.Visible = false;
 
-            btn_save.Enabled = false;
-            btn_cancel.Enabled = false;
+            btn_save.Visible = false;
+            btn_cancel.Visible = false;
+
+            rbt_all.Enabled = false;
+
             foreach (var control in panel2.Controls)
             {
                 if (control is Uc_Student s)
@@ -108,45 +108,35 @@ namespace HomeWork_LogBook
                     s.btn_c2.Enabled = false;
                     s.btn_c3.Enabled = false;
                     s.btn_diamond_cancel.Enabled = false;
+
                 }
             }
         }
-    
 
+        #endregion
 
+        #region AllRadioButton
+
+        private void rbt_all_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkRadioEsas == true)
+                radioButton1.Checked = true;
+            else
+                radioButton2.Checked = true;
+
+            foreach (var control in panel2.Controls)
+                if (control is Uc_Student s)
+                {
+                    s.rbtn_1.Enabled = true;
+                    s.rbtn_2.Enabled = true;
+                    s.rbtn_3.Enabled = true;
+
+                    s.rbtn_1.Checked = true;
+                }
+        }
 
         #endregion
 
 
-
-
-
-
-        private void rbt_all_CheckedChanged(object sender, EventArgs e)
-        {
-            if (txtBox_Dersin_adi.Text != string.Empty)
-            {
-                foreach (var control in panel2.Controls)
-                    if (control is Uc_Student s)
-                    {
-                        s.rbtn_1.Enabled = true;
-                        s.rbtn_2.Enabled = true;
-                        s.rbtn_3.Enabled = true;
-
-                        s.rbtn_1.Checked = true;
-                    }
-
-                txtBox_Dersin_adi.Enabled = false;
-                btn_save.Enabled = false;
-                btn_cancel.Enabled = false;
-            }
-            else
-            {
-                radioButton1.Enabled = true;
-                radioButton2.Enabled = true;
-                rbt_all.Enabled = false;
-                MessageBox.Show("Movzunun adini daxil edin", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
     }
 }

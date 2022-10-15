@@ -49,6 +49,7 @@
             this.btn_c2 = new System.Windows.Forms.Button();
             this.btn_c1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_comment_save = new System.Windows.Forms.Button();
             this.txt_comment = new System.Windows.Forms.TextBox();
             this.btn_comment = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,13 +67,13 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.57094F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.82287F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.89768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.74807F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.74807F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.86586F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.34652F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
@@ -98,7 +99,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 55);
+            this.panel1.Size = new System.Drawing.Size(295, 55);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -138,10 +139,10 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lbl_lastin);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(267, 0);
+            this.panel2.Location = new System.Drawing.Point(295, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(139, 55);
+            this.panel2.Size = new System.Drawing.Size(118, 55);
             this.panel2.TabIndex = 1;
             // 
             // lbl_lastin
@@ -150,7 +151,7 @@
             this.lbl_lastin.AutoSize = true;
             this.lbl_lastin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_lastin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbl_lastin.Location = new System.Drawing.Point(38, 16);
+            this.lbl_lastin.Location = new System.Drawing.Point(28, 16);
             this.lbl_lastin.Name = "lbl_lastin";
             this.lbl_lastin.Size = new System.Drawing.Size(63, 22);
             this.lbl_lastin.TabIndex = 0;
@@ -163,10 +164,10 @@
             this.panel3.Controls.Add(this.rbtn_2);
             this.panel3.Controls.Add(this.rbtn_1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(406, 0);
+            this.panel3.Location = new System.Drawing.Point(413, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(152, 55);
+            this.panel3.Size = new System.Drawing.Size(177, 55);
             this.panel3.TabIndex = 2;
             // 
             // rbtn_3
@@ -175,7 +176,7 @@
             this.rbtn_3.AutoSize = true;
             this.rbtn_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbtn_3.Enabled = false;
-            this.rbtn_3.Location = new System.Drawing.Point(99, 19);
+            this.rbtn_3.Location = new System.Drawing.Point(111, 19);
             this.rbtn_3.Name = "rbtn_3";
             this.rbtn_3.Size = new System.Drawing.Size(17, 16);
             this.rbtn_3.TabIndex = 0;
@@ -187,7 +188,7 @@
             this.rbtn_2.AutoSize = true;
             this.rbtn_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbtn_2.Enabled = false;
-            this.rbtn_2.Location = new System.Drawing.Point(76, 19);
+            this.rbtn_2.Location = new System.Drawing.Point(88, 19);
             this.rbtn_2.Name = "rbtn_2";
             this.rbtn_2.Size = new System.Drawing.Size(17, 16);
             this.rbtn_2.TabIndex = 0;
@@ -199,7 +200,7 @@
             this.rbtn_1.AutoSize = true;
             this.rbtn_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbtn_1.Enabled = false;
-            this.rbtn_1.Location = new System.Drawing.Point(53, 19);
+            this.rbtn_1.Location = new System.Drawing.Point(65, 19);
             this.rbtn_1.Name = "rbtn_1";
             this.rbtn_1.Size = new System.Drawing.Size(17, 16);
             this.rbtn_1.TabIndex = 0;
@@ -210,10 +211,10 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.cbox_test);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(558, 0);
+            this.panel4.Location = new System.Drawing.Point(590, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(127, 55);
+            this.panel4.Size = new System.Drawing.Size(118, 55);
             this.panel4.TabIndex = 3;
             // 
             // cbox_test
@@ -239,20 +240,21 @@
             "      10",
             "      11",
             "      12"});
-            this.cbox_test.Location = new System.Drawing.Point(33, 14);
+            this.cbox_test.Location = new System.Drawing.Point(29, 14);
             this.cbox_test.Name = "cbox_test";
             this.cbox_test.Size = new System.Drawing.Size(60, 27);
             this.cbox_test.TabIndex = 0;
+            this.cbox_test.SelectedIndexChanged += new System.EventHandler(this.cbox_test_SelectedIndexChanged);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.cbox_classwork);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(685, 0);
+            this.panel5.Location = new System.Drawing.Point(708, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(127, 55);
+            this.panel5.Size = new System.Drawing.Size(118, 55);
             this.panel5.TabIndex = 4;
             // 
             // cbox_classwork
@@ -278,10 +280,11 @@
             "      10",
             "      11",
             "      12"});
-            this.cbox_classwork.Location = new System.Drawing.Point(33, 14);
+            this.cbox_classwork.Location = new System.Drawing.Point(29, 14);
             this.cbox_classwork.Name = "cbox_classwork";
             this.cbox_classwork.Size = new System.Drawing.Size(60, 27);
             this.cbox_classwork.TabIndex = 0;
+            this.cbox_classwork.SelectedIndexChanged += new System.EventHandler(this.cbox_classwork_SelectedIndexChanged);
             // 
             // panel6
             // 
@@ -291,10 +294,10 @@
             this.panel6.Controls.Add(this.btn_c2);
             this.panel6.Controls.Add(this.btn_c1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(812, 0);
+            this.panel6.Location = new System.Drawing.Point(826, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(140, 55);
+            this.panel6.Size = new System.Drawing.Size(165, 55);
             this.panel6.TabIndex = 5;
             // 
             // btn_diamond_cancel
@@ -305,7 +308,7 @@
             this.btn_diamond_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_diamond_cancel.Enabled = false;
             this.btn_diamond_cancel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_diamond_cancel.Location = new System.Drawing.Point(96, 17);
+            this.btn_diamond_cancel.Location = new System.Drawing.Point(108, 17);
             this.btn_diamond_cancel.Name = "btn_diamond_cancel";
             this.btn_diamond_cancel.Size = new System.Drawing.Size(20, 20);
             this.btn_diamond_cancel.TabIndex = 0;
@@ -319,7 +322,7 @@
             this.btn_c3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_c3.Enabled = false;
             this.btn_c3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_c3.Location = new System.Drawing.Point(70, 17);
+            this.btn_c3.Location = new System.Drawing.Point(82, 17);
             this.btn_c3.Name = "btn_c3";
             this.btn_c3.Size = new System.Drawing.Size(20, 20);
             this.btn_c3.TabIndex = 0;
@@ -333,7 +336,7 @@
             this.btn_c2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_c2.Enabled = false;
             this.btn_c2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_c2.Location = new System.Drawing.Point(44, 17);
+            this.btn_c2.Location = new System.Drawing.Point(56, 17);
             this.btn_c2.Name = "btn_c2";
             this.btn_c2.Size = new System.Drawing.Size(20, 20);
             this.btn_c2.TabIndex = 0;
@@ -347,7 +350,7 @@
             this.btn_c1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_c1.Enabled = false;
             this.btn_c1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_c1.Location = new System.Drawing.Point(18, 17);
+            this.btn_c1.Location = new System.Drawing.Point(30, 17);
             this.btn_c1.Name = "btn_c1";
             this.btn_c1.Size = new System.Drawing.Size(20, 20);
             this.btn_c1.TabIndex = 0;
@@ -356,26 +359,41 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.btn_comment_save);
             this.panel7.Controls.Add(this.txt_comment);
             this.panel7.Controls.Add(this.btn_comment);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(952, 0);
+            this.panel7.Location = new System.Drawing.Point(991, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(231, 55);
+            this.panel7.Size = new System.Drawing.Size(192, 55);
             this.panel7.TabIndex = 6;
+            // 
+            // btn_comment_save
+            // 
+            this.btn_comment_save.BackgroundImage = global::HomeWork_LogBook.Properties.Resources.save;
+            this.btn_comment_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_comment_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_comment_save.Location = new System.Drawing.Point(111, 17);
+            this.btn_comment_save.Name = "btn_comment_save";
+            this.btn_comment_save.Size = new System.Drawing.Size(20, 20);
+            this.btn_comment_save.TabIndex = 7;
+            this.btn_comment_save.UseVisualStyleBackColor = true;
+            this.btn_comment_save.Visible = false;
+            this.btn_comment_save.Click += new System.EventHandler(this.btn_comment_save_Click);
             // 
             // txt_comment
             // 
             this.txt_comment.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txt_comment.Enabled = false;
-            this.txt_comment.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.txt_comment.Location = new System.Drawing.Point(56, 14);
+            this.txt_comment.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txt_comment.Location = new System.Drawing.Point(30, 17);
+            this.txt_comment.Multiline = true;
             this.txt_comment.Name = "txt_comment";
             this.txt_comment.PlaceholderText = "Comment";
-            this.txt_comment.Size = new System.Drawing.Size(61, 27);
+            this.txt_comment.Size = new System.Drawing.Size(75, 20);
             this.txt_comment.TabIndex = 1;
+            this.txt_comment.Visible = false;
             // 
             // btn_comment
             // 
@@ -385,7 +403,7 @@
             this.btn_comment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_comment.Enabled = false;
             this.btn_comment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_comment.Location = new System.Drawing.Point(12, 17);
+            this.btn_comment.Location = new System.Drawing.Point(7, 17);
             this.btn_comment.Margin = new System.Windows.Forms.Padding(0);
             this.btn_comment.Name = "btn_comment";
             this.btn_comment.Size = new System.Drawing.Size(20, 20);
@@ -454,5 +472,6 @@
         public Button btn_c3;
         public Button btn_c2;
         public Button btn_diamond_cancel;
+        private Button btn_comment_save;
     }
 }
